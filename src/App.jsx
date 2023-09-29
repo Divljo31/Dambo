@@ -1,12 +1,14 @@
 import { useState } from 'react'
 import Header from './components/Header'
-import './Style.scss'
+import Footer from './components/Footer'
+import './style/Footer.scss'
+
 
 function App() {
 
   return (
     <>
-      <Header />
+      <Footer/>
     </>
   )
 }
