@@ -1,0 +1,86 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1370px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 10px 0;
+    position: absolute;
+    top: 0;
+    
+    .header-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 30px;
+        .header-logo {
+            width: 128px;
+        }
+    
+        ul {
+            display: flex;
+            gap: 50px;
+            font-size: 20px;
+            font-weight: 700;
+    
+            .header-link {
+                text-decoration: none;
+                color: #32355d;
+                position: relative;
+    
+                &::before {
+                    content: '';
+                    background-color: #f85f89;
+                    width: 0%;
+                    height: 8px;
+                    position: absolute;
+                    bottom: 5px;
+                    transition: all ease 0.3s;
+                    z-index: -1;
+                }
+    
+                &:hover {
+                    &::before {
+                        content: '';
+                        width: 100%;
+                        height: 8px;
+                        position: absolute;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .header-contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin-right: 30px;
+
+        .circle {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all ease 0.3s;
+            background-color: #f85f89;
+            cursor: pointer;
+            &:hover {
+                transform: scale(1.08);
+            }
+            .icon {
+                width: 35px;
+                height: 35px;
+            }
+        }
+    }
+}

@@ -1,12 +1,12 @@
 import { useState } from 'react'
-import Header from './components/Header'
-import './Style.scss'
+import './styles.scss'
+import LandingPage from './pages/LandingPage'
 
 function App() {
 
   return (
     <>
-      <Header />
+      <LandingPage />
     </>
   )
 }
