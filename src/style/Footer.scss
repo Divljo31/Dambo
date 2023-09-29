@@ -1,0 +1,67 @@
+$primary-color: #32355D;
+$accent-color: white;
+
+footer {
+  background-color: $primary-color;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+.left-section {
+    
+  text-align: left;
+}
+
+.right-section {
+
+  text-align: left;
+}
+
+.brand-info p {
+  margin: 0;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.icon {
+  margin-left: 10px;
+  color: $primary-color; /* Adjust color as needed */
+  text-decoration: none;
+}
+
+.icon:hover {
+  color: $accent-color; /* Adjust hover color as needed */
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.right-section{
+
+    color: white;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    
+    form {
+        color: white;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+
+    }
+
+    .white-border {
+        & .MuiFilledInput-root {
+            border-color: white; // Set the border color to white
+            background-color: white; // set background color to white
+            
+        }
+    }
+}
