@@ -1,10 +1,11 @@
 import { TextField } from '@mui/material';
 import React from 'react';
-import { Button } from '@mui/base/Button';
-import { TextareaAutosize } from '@mui/base/TextareaAutosize';
-import { styled } from '@mui/system';
 import EmptyTextarea from './EmptyTextarea';
-
+import dumbo from '../assets/dumbo.png';
+import igLogo from '../assets/instagram.png';
+import fbLogo from '../assets/facebook.png';
+import waLogo from '../assets/whatsapp.png';
+import viLogo from '../assets/viber.png';
 
 
 
@@ -15,19 +16,23 @@ const Footer = () => {
     <footer>
       <div className="left-section">
         <div className="brand-info">
+          <img src={dumbo} className='footer-logo'/>
           <p>Dambo</p>
           <p>&copy; Bar & Play</p>
           <p>Telefon: +381 65 444 444</p>
         </div>
         <div className="social-icons">
           <a href="#" className="icon">
-            Facebook
+            <img src={igLogo} className='social-icon'/>
           </a>
           <a href="#" className="icon">
-            Twitter
+           <img src={fbLogo} className='social-icon'/>
           </a>
           <a href="#" className="icon">
-            Instagram
+            <img src={waLogo} className='social-icon'/>
+          </a>
+          <a href="#" className="icon">
+            <img src={viLogo} className='social-icon'/>
           </a>
         </div>
       </div>

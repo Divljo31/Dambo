@@ -7,11 +7,27 @@ footer {
   justify-content: space-around;
   align-items: center;
   color: white;
+  padding-bottom: 30px;
 }
+
 
 .left-section {
     
+  display: flex;
+  flex-direction: column;
   text-align: left;
+
+  .footer-logo{
+    width: 90px;
+    height: 90px;
+  }
+
+  .social-icon{
+
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .right-section {

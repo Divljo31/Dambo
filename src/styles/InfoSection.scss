@@ -2,7 +2,7 @@
     height: 100vh;
     display: flex;
     justify-content: center;
-
+    
     .container {
         width: 1300px;
         height: 100%;
@@ -11,6 +11,8 @@
             display: flex;
             justify-content: center;
             margin-top: 100px;
+            margin-bottom: 100px;
+
             .item {
                 display: flex;
                 justify-content: center;
@@ -26,7 +28,86 @@
         }
 
         .time-wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            gap: 20px;
+
+
+            .benefit-list{
+                list-style: none;
+
+                position: relative;
+                text-align: center;
+                
+
+                .check-image{
+                    height: 30px;
+                    width: 30px;
+                }
+
+                .benefit-list{
+                    list-style: none;
+                    text-align: left;
+                    
+                    li{
+
+                        display: flex;
+                        justify-content: start;
+                    
+                        
+                        
+                        padding: 10px;
+                        &:before {
+
+                            left: 0px;
+                            padding: 5px;
+                            content: url('../assets/greenCheck.png'); 
+                            margin-right: 30px;
+                        }
+
+                    }
+
+                }
+            }
             
+
+            .worktime-div{
+                
+                position: relative;
+                padding: 14px 42px 50px;
+                background-color: rgba(215,245,250,.4);
+                border: 1px solid #d7f5fa;
+                border-radius: 10px;
+                width: 20%;
+                height: 40%;
+
+            }
+            
+
+            .table-h3{
+                text-align: center;
+                margin: 20px 0;
+                color: #32355d;
+                font-weight: bold;
+                font-size: 30px;
+                line-height: 1.4em;
+            }
+
+            .tabela-radno-vreme{
+                text-align: center;
+                width: 100%;
+            }
+
+            
+            .calendar-div{
+                
+                text-align: center;
+
+                
+            }
+
         }
     }
 }
+
