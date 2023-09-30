@@ -3,7 +3,6 @@ $accent-color: white;
 
 footer {
   background-color: $primary-color;
-  padding: 20px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -26,12 +25,6 @@ footer {
 
 .social-icons {
   margin-top: 10px;
-}
-
-.icon {
-  margin-left: 10px;
-  color: $primary-color; /* Adjust color as needed */
-  text-decoration: none;
 }
 
 .icon:hover {
