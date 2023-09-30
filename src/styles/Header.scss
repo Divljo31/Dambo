@@ -3,14 +3,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 1370px;
+    width: 1300px;
     height: 100px;
     background-color: #fff;
     border-radius: 20px;
     margin-top: 20px;
     padding: 10px 0;
-    position: absolute;
-    top: 0;
     
     .header-left {
         display: flex;
@@ -31,6 +29,7 @@
                 text-decoration: none;
                 color: #32355d;
                 position: relative;
+                z-index: 1;
     
                 &::before {
                     content: '';
@@ -74,12 +73,14 @@
             transition: all ease 0.3s;
             background-color: #f85f89;
             cursor: pointer;
+            
             &:hover {
                 transform: scale(1.08);
             }
             .icon {
                 width: 35px;
                 height: 35px;
+                transition: all ease 0.3s;
             }
         }
     }

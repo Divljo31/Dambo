@@ -3,7 +3,7 @@ import './styles.scss'
 import LandingPage from './pages/LandingPage'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import './style/Footer.scss'
+import InfoSection from './pages/InfoSection'
 
 
 function App() {
@@ -11,6 +11,7 @@ function App() {
   return (
     <>
       <LandingPage />
+      <InfoSection />
       <Footer/>
     </>
   )

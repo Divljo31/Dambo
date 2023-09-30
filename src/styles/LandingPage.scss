@@ -1,10 +1,42 @@
-.landing-section {
+.bg-image {
     background: url('../assets/landing-image.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: center;
-    position: relative;
+    flex-direction: column;
+    align-items: center;
+
+    .landing-page {
+        width: 1300px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .text-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 50px;
+            color: #32355d;
+            h1 {
+                background-color: #D7F5FA;
+                width: 660px;
+                font-size: 80px;
+                margin: 0;
+                padding: 0;
+                border-radius: 15px;
+            }
+
+            h2 {
+                background-color: #DCE086;
+                width: 530px;
+                margin: 0;
+                font-size: 55px;
+                border-radius: 15px;
+            }
+        }
+    }
 }
