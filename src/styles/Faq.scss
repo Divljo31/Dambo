@@ -1,0 +1,43 @@
+.faq-section {
+    display: flex;
+    justify-content: center ;
+    .container {
+        width: 1300px;
+        .questions {
+            display: flex;
+            flex-direction: column;
+
+            .qna-wrapper {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 20px;
+
+                .open-btn {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 4px solid #32355d;
+                    border-radius: 5px;
+                    width: 25px;
+                    height: 25px;
+                    cursor: pointer;
+                }
+
+                .qna {
+                    .question {
+
+                    }
+
+                    .answer {
+                        display: none;
+                        overflow: hidden;
+                    }
+                    .open {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

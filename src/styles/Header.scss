@@ -9,6 +9,7 @@
     border-radius: 20px;
     margin-top: 20px;
     padding: 10px 0;
+    z-index: 3;
     
     .header-left {
         display: flex;
@@ -17,6 +18,7 @@
         margin-left: 30px;
         .header-logo {
             width: 128px;
+            cursor: pointer;
         }
     
         ul {
