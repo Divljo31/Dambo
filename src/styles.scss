@@ -2,10 +2,12 @@
 @import url('./styles/LandingPage.scss');
 @import url('./styles/Footer.scss');
 @import url('./styles/InfoSection.scss');
+@import url('./styles/Faq.scss');
 
 body {
     font-family: 'Baloo 2', cursive;
     margin: 0;
     padding: 0;
     color: #32355d;
+    box-sizing: border-box;
 }

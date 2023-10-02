@@ -8,69 +8,70 @@ footer {
   align-items: center;
   color: white;
   padding-bottom: 30px;
-}
+  width: 100%;
 
-
-.left-section {
-    
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-
-  .footer-logo{
-    width: 90px;
-    height: 90px;
-  }
-
-  .social-icon{
-
-    margin: 5px;
-    width: 30px;
-    height: 30px;
-  }
-}
-
-.right-section {
-
-  text-align: left;
-}
-
-.brand-info p {
-  margin: 0;
-}
-
-.social-icons {
-  margin-top: 10px;
-}
-
-.icon:hover {
-  color: $accent-color; /* Adjust hover color as needed */
-}
-
-h2 {
-  margin-bottom: 10px;
-}
-
-.right-section{
-
-    color: white;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    
-    form {
+  .left-section {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+  
+      .footer-logo {
+        width: 90px;
+        height: 90px;
+      }
+  
+      .social-icon {
+  
+        margin: 5px;
+        width: 30px;
+        height: 30px;
+      }
+    }
+  
+    .right-section {
+      text-align: left;
+    }
+  
+    .brand-info p {
+      margin: 0;
+    }
+  
+    .social-icons {
+      margin-top: 10px;
+    }
+  
+    .icon:hover {
+      color: $accent-color;
+      /* Adjust hover color as needed */
+    }
+  
+    h2 {
+      margin-bottom: 10px;
+    }
+  
+    .right-section {
+  
+      color: white;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+  
+      form {
         color: white;
         display: flex;
         gap: 20px;
         flex-direction: column;
-
-    }
-
-    .white-border {
+  
+      }
+  
+      .white-border {
         & .MuiFilledInput-root {
-            border-color: white; // Set the border color to white
-            background-color: white; // set background color to white
-            
+          border-color: white; // Set the border color to white
+          background-color: white; // set background color to white
+  
         }
+      }
     }
 }
+
+
