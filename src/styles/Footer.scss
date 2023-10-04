@@ -4,11 +4,18 @@ $accent-color: white;
 footer {
   background-color: $primary-color;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
   color: white;
-  padding-bottom: 30px;
+  padding-bottom: 100px;
   width: 100%;
+
+  .container {
+    width: 1300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
 
   .left-section {
       display: flex;
@@ -21,7 +28,6 @@ footer {
       }
   
       .social-icon {
-  
         margin: 5px;
         width: 30px;
         height: 30px;
@@ -61,7 +67,16 @@ footer {
         display: flex;
         gap: 20px;
         flex-direction: column;
-  
+        max-width: 400px;
+        position: relative;
+
+        .send-btn {
+          width: 160px;
+          position: "absolute";
+          bottom: -5px;
+          font-family: 'Baloo 2', cursive;
+          border-radius: 10px;
+        }
       }
   
       .white-border {

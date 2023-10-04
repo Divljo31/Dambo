@@ -3,7 +3,7 @@ import { TextareaAutosize } from '@mui/base/TextareaAutosize';
 import { styled } from '@mui/system';
 
 
-const EmptyTextarea = () => {
+const EmptyTextarea = ({name}) => {
     const blue = {
         100: '#DAECFF',
         200: '#b6daff',
@@ -39,7 +39,12 @@ const EmptyTextarea = () => {
         background: ${theme.palette.mode === 'dark' ? grey[900] : '#fff'};
         border: 1px solid ${theme.palette.mode === 'dark' ? grey[700] : grey[200]};
         box-shadow: 0px 2px 2px ${theme.palette.mode === 'dark' ? grey[900] : grey[50]};
-    
+        max-width: 350px;
+        min-width: 350px;
+        max-height: 200px;
+        height: 180px
+        min-height: 100px;
+
         &:hover {
           border-color: ${blue[400]};
         }
@@ -56,7 +61,7 @@ const EmptyTextarea = () => {
       `,
       );
     
-      return <StyledTextarea aria-label="empty textarea" minRows={3} maxRows={7} placeholder="Napisite poruku..." />;
+      return <StyledTextarea name={name} aria-label="empty textarea" minRows={3} maxRows={7} placeholder="Napisite poruku..." />;
 }
 
 export default EmptyTextarea
