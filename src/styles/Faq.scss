@@ -1,12 +1,15 @@
 .faq-section {
     display: flex;
     justify-content: center ;
+    margin-top: 100px;
+
     .container {
         width: 1300px;
         text-align: center;
 
-        h1 {
+        .title {
             font-size: 60px;
+            margin: 0;
         }
 
         .questions {
@@ -56,6 +59,40 @@
                     }
                 }
 
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .faq-section {
+        max-width: 480px;
+        .container {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            max-width: 380px;
+
+            .title {
+                font-size: 2.5em;
+            }
+
+            .questions {
+                .qna-wrapper {
+                    .open-btn {
+                        width: 20px;
+                        height: 20px;
+                        border: 3px solid #32355d;
+                        font-size: 1.5em;
+                    }
+                    .qna {
+                        .question {
+                            font-size: 1.1em;
+                            font-weight: 500;
+                            text-align: left;
+                        }
+                    }
+                }
             }
         }
     }
