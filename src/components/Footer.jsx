@@ -13,11 +13,10 @@ import emailjs from '@emailjs/browser';
 
 const Footer = () => {
   const form = useRef();
-  console.log(import.meta.env.VITE_SERVICE_ID)
+
   const sendEmail = (e) => {
     e.preventDefault();
-    console.log(form.current)
-    emailjs.sendForm("service_n8xkj6a", "template_nodxj2g", form.current, "rD6hOgDTxM8SfJkMv")
+    emailjs.sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, form.current, import.meta.env.VITE_PUBLIC_KEY)
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -59,7 +58,7 @@ const Footer = () => {
               
               <EmptyTextarea name={'message'} /> 
               {/*Sve se menja u emptytextarea.jsx  */}
-              <Button type='submit' variant='contained' >Send</Button>
+              <Button type='submit' variant='contained'>Send</Button>
           </form>
         </div>
       </div>
