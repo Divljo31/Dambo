@@ -3,19 +3,19 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     z-index: -100;
-    
+    overflow: hidden;
     .overlay {
         position: absolute;
         width: 100%;
         height: 100vh;
         background-color: rgba($color: #000000, $alpha: 0.2);
         z-index: 0;
+        overflow: hidden;
     }
 
     .landing-page {
@@ -37,7 +37,7 @@
                 max-width: 660px;
                 font-size: 80px;
                 margin: 0;
-                padding: 0;
+                padding: 0 10px;
                 border-radius: 15px;
             }
 
@@ -45,6 +45,7 @@
                 background-color: #DCE086;
                 max-width: 530px;
                 margin: 0;
+                padding: 0 10px;
                 font-size: 55px;
                 border-radius: 15px;
             }
@@ -54,7 +55,6 @@
 
 @media only screen and (max-width: 480px) {
     .bg-image {
-        max-width: 480px;
         .landing-page {
             .title1 {
                 max-width: 380px !important;
