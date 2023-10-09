@@ -1,8 +1,7 @@
 .info-section {
-    width: 100vw;
     display: flex;
     justify-content: center;
-    
+
     .container {
         width: 1300px;
         height: 100%;
@@ -43,7 +42,8 @@
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
-                
+                padding: 0;
+                margin: 0;
                 
                 li {
                     display: flex;
@@ -68,30 +68,35 @@
 
             .worktime-div{
                 flex: 1;
-                padding-bottom: 30px;
                 background-color: rgba(215,245,250,.4);
                 border: 1px solid #d7f5fa;
                 border-radius: 10px;
 
-                th {
-                    width: 33%;
+                .table-h3 {
+                    text-align: center;
+                    margin: 20px 0;
+                    color: #32355d;
+                    font-weight: bold;
+                    font-size: 30px;
+                    line-height: 1.4em;
+                }
+
+                table {
+                    width: 100%;
+                    text-align: center;
+
+                    th {
+                        width: 33%;
+                        font-size: 1.5rem;
+                    }
+                    td {
+                        font-size: 1.2rem;
+                        font-weight: 500;
+                    }
                 }
             }
+
             
-
-            .table-h3{
-                text-align: center;
-                margin: 20px 0;
-                color: #32355d;
-                font-weight: bold;
-                font-size: 30px;
-                line-height: 1.4em;
-            }
-
-            .tabela-radno-vreme{
-                text-align: center;
-                width: 100%;
-            }
 
             
             .calendar-div{
@@ -141,6 +146,11 @@
                 .benefit-div {
                     .benefit-list {
                         padding: 0;
+                    }
+                }
+                .worktime-div {
+                    table {
+                        padding-bottom: 20px;
                     }
                 }
             }

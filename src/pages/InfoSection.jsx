@@ -66,54 +66,54 @@ const InfoSection = () => {
                             <h3 className='table-h3'>Radno vreme</h3>
                             <table className='tabela-radno-vreme'>
                                 <thead>
-                                <tr>
-                                    <th>Day</th>
-                                    <th>Pocetak</th>
-                                    <th>Kraj</th>
-                                </tr>
+                                    <tr>
+                                        <th>Dan</th>
+                                        <th>Pocetak</th>
+                                        <th>Kraj</th>
+                                    </tr>
                                 </thead>
                                 <tbody>
-                                <tr>
-                                    <td>Ponedeljak</td>
-                                    <td>9:00 </td>
-                                    <td>5:00 </td>
-                                </tr>
-                                <tr>
-                                    <td>Utorak</td>
-                                    <td>9:00 </td>
-                                    <td>5:00 </td>
-                                </tr>
-                                <tr>
-                                    <td>Sreda</td>
-                                    <td>9:00</td>
-                                    <td>5:00</td>
-                                </tr>
-                                <tr>
-                                    <td>Cetvrtak</td>
-                                    <td>9:00 </td>
-                                    <td>5:00 </td>
-                                </tr>
-                                <tr>
-                                    <td>Petak</td>
-                                    <td>9:00 </td>
-                                    <td>5:00 </td>
-                                </tr>
-                                <tr>
-                                    <td>Subota</td>
-                                    <td>9:00 </td>
-                                    <td>5:00 </td>
-                                </tr>
-                                <tr>
-                                    <td>Nedelja</td>
-                                    <td>9:00 </td>
-                                    <td>5:00 </td>
-                                </tr>
+                                    <tr>
+                                        <td>Ponedeljak</td>
+                                        <td>9:00 </td>
+                                        <td>5:00 </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Utorak</td>
+                                        <td>9:00 </td>
+                                        <td>5:00 </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sreda</td>
+                                        <td>9:00</td>
+                                        <td>5:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cetvrtak</td>
+                                        <td>9:00 </td>
+                                        <td>5:00 </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Petak</td>
+                                        <td>9:00 </td>
+                                        <td>5:00 </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Subota</td>
+                                        <td>9:00 </td>
+                                        <td>5:00 </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nedelja</td>
+                                        <td>9:00 </td>
+                                        <td>5:00 </td>
+                                    </tr>
                                 </tbody>
                             </table>
                     </div>
-                    <div className="calendar-div">
+                    {/* <div className="calendar-div">
                         <BasicDateCalendar/>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

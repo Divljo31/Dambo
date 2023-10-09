@@ -3,6 +3,7 @@
     justify-content: center ;
     margin-top: 100px;
 
+
     .container {
         width: 1300px;
         text-align: center;
@@ -66,7 +67,6 @@
 
 @media only screen and (max-width: 480px) {
     .faq-section {
-        max-width: 480px;
         .container {
             display: flex;
             align-items: center;
