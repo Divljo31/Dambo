@@ -31,15 +31,15 @@ const Faq = () => {
         <div className="questions">
           {faqData.map((item, index) => (
             <div className="qna-wrapper" key={index}>
-              <h1 className='open-btn' onClick={() => handleChange(index)}>
+              <div className='open-btn' onClick={() => handleChange(index)}>
                 {selectedAnswer === index ? '-' : '+'}
-              </h1>
+              </div>
               <div className={`qna ${selectedAnswer == index ? 'open' : ''}`}>
                 <div className="question">
                   {item.question}
                 </div>
                 <div className='answer' >
-                  {item.answer}
+                  <p>{item.answer}</p>
                 </div>
               </div>
             </div>
