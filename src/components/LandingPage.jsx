@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Header from '../components/Header'
+import Header from './Header'
 
 
 const LandingPage = () => {
@@ -7,7 +7,6 @@ const LandingPage = () => {
   return (
     <div className='bg-image'>
       <div className="overlay"></div>
-        <Header />
         <div className="landing-page">
           <div className='text-wrapper'>
             <h1 className='title1'>Our little heaven!</h1>
