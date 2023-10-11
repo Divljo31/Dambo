@@ -111,9 +111,9 @@ const InfoSection = () => {
                                 </tbody>
                             </table>
                     </div>
-                    {/* <div className="calendar-div">
+                    <div className="calendar-div">
                         <BasicDateCalendar/>
-                    </div> */}
+                    </div>
                 </div>
             </div>
         </div>
