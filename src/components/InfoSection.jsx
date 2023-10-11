@@ -2,7 +2,7 @@ import React from 'react'
 import house from '../assets/house.png'
 import cake from '../assets/cake.png'
 import baloons from '../assets/baloons.png'
-import BasicDateCalendar from '../components/Calendar'
+import BasicDateCalendar from './Calendar'
 import storyImg from '../assets/story.jpg';
 import checkImg from '../assets/greenCheck.png';
 
@@ -34,7 +34,7 @@ const InfoSection = () => {
                     </div>
                 </div>
                 <div className="time-wrapper">
-                    <div className='benefit-div'>
+                    {/* <div className='benefit-div'>
                         <ul className='benefit-list'>
                             <li>
                                 <img className="check-image" src={checkImg} alt="Checkmark" />
@@ -61,7 +61,7 @@ const InfoSection = () => {
                                 <p>Your childcare wish just came true.</p>
                             </li>
                         </ul>
-                    </div>
+                    </div> */}
                     <div className='worktime-div'>  
                             <h3 className='table-h3'>Radno vreme</h3>
                             <table className='tabela-radno-vreme'>

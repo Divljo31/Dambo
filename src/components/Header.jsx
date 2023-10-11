@@ -18,10 +18,9 @@ const Header = () => {
             <div className='header-left'>
                 <Link to={'/'}><img src={dumbo} className='header-logo'/></Link>
                 <ul>
-                    <Link to={'/'} className='header-link'>Home</Link>
-                    <Link to={'/'} className='header-link'>Cenovnik</Link>
-                    <Link to={'/'} className='header-link'>Kontakt</Link>
-                    <Link to={'/'} className='header-link'>Rezervacija</Link>
+                    <Link to={'/'} className='header-link'>Pocetna</Link>
+                    <Link to={'/cenovnik'} className='header-link'>Cenovnik</Link>
+                    <Link to={'/kontakt'} className='header-link'>Kontakt</Link>
                 </ul>
             </div>
             <div className='header-contact'>
