@@ -11,7 +11,13 @@ import Avatar from '@mui/material/Avatar';
 import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
 import { MultiInputTimeRangeField } from '@mui/x-date-pickers-pro/MultiInputTimeRangeField';
 import { SingleInputTimeRangeField } from '@mui/x-date-pickers-pro/SingleInputTimeRangeField';
+import updateLocale from "dayjs/plugin/updateLocale";
 
+dayjs.extend(updateLocale);
+
+dayjs.updateLocale("en", {
+    weekStart: 1
+});
 
 
 function getRandomNumber(min, max) {
@@ -67,7 +73,25 @@ export default function DateCalendarServerRequest() {
   const requestAbortController = React.useRef(null);
   const [isLoading, setIsLoading] = React.useState(false);
   const [highlightedDays, setHighlightedDays] = React.useState([1, 2, 15]);
+  const [selectedDate, setSelectedDate] = React.useState(null);
 
+  const handleDateChange = (date) => {
+    setSelectedDate(date);
+    
+    if (date){
+        onDateSelect(date);
+    }
+    
+    
+  };
+  
+
+  const onDateSelect = (date) => {
+    
+    console.log('Date ', date);
+
+  }
+ 
   const fetchHighlightedDays = (date) => {
     const controller = new AbortController();
     fakeFetch(date, {
@@ -106,34 +130,18 @@ export default function DateCalendarServerRequest() {
   };
 
 
-function BasicTimeRangeField() {
-    return (
-      <LocalizationProvider dateAdapter={AdapterDayjs}>
-        <DemoContainer
-          components={['MultiInputTimeRangeField', 'SingleInputTimeRangeField']}
-        >
-          <MultiInputTimeRangeField
-            slotProps={{
-              textField: ({ position }) => ({
-                label: position === 'start' ? 'From' : 'To',
-              }),
-            }}
-          />
-          <SingleInputTimeRangeField label="From - To" />
-        </DemoContainer>
-      </LocalizationProvider>
-    );
-  }
 
 
   return (
-    <LocalizationProvider dateAdapter={AdapterDayjs}>
+    <LocalizationProvider dateAdapter={AdapterDayjs} >
       <DateCalendar
         disablePast
         
+        value = {selectedDate}
         defaultValue={initialValue}
         loading={isLoading}
         onMonthChange={handleMonthChange}
+        onChange={handleDateChange}
         renderLoading={() => <DayCalendarSkeleton />}
         slots={{
           day: ServerDay,
