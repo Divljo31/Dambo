@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
 import { Link } from 'react-router-dom'
 
-const Menu = ({isOpen}) => {
+interface MenuProps {
+    isOpen: boolean;
+}
+
+const Menu: React.FC<MenuProps> = (props) => {
     return (
-        <div className={`menu ${isOpen ? 'open' : ''}`}>
+        <div className={`menu ${props.isOpen ? 'open' : ''}`}>
             <ul>
                 <Link to={'/'} className='header-link'>Home</Link>
                 <Link to={'/'} className='header-link'>Cenovnik</Link>

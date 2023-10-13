@@ -1,10 +1,9 @@
-import React from 'react'
 import house from '../assets/house.png'
 import cake from '../assets/cake.png'
 import baloons from '../assets/baloons.png'
 import BasicDateCalendar from './Calendar'
-import storyImg from '../assets/story.jpg';
-import checkImg from '../assets/greenCheck.png';
+// import storyImg from '../assets/story.jpg';
+// import checkImg from '../assets/greenCheck.png';
 
 const InfoSection = () => {
     return (

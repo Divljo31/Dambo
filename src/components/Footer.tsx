@@ -12,11 +12,11 @@ import emailjs from '@emailjs/browser';
 
 
 const Footer = () => {
-  const form = useRef();
+  const form = useRef<HTMLFormElement>(null);
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
-    emailjs.sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, form.current, import.meta.env.VITE_PUBLIC_KEY)
+    emailjs.sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, form.current!, import.meta.env.VITE_PUBLIC_KEY)
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -50,12 +50,10 @@ const Footer = () => {
           </div>
         </div>
         <div className="right-section">
-          <h2 >Kontaktirajte nas</h2>
+          <h2>Kontaktirajte nas</h2>
           <form ref={form} onSubmit={sendEmail}>
-              
               <TextField className="white-border" id="filled-basic" type='email' name='user_email' label="Email" variant="filled" />
               <TextField className="white-border" id="filled-basic" type='text' name='user_name' label="Ime i Prezime" variant="filled" />
-              
               <EmptyTextarea name={'message'} /> 
               {/*Sve se menja u emptytextarea.jsx  */}
               <Button type='submit' variant='contained'>Send</Button>

@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 const Faq = () => {
-  const [selectedAnswer, setSelectedAnswer] = useState(null)
+  const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null)
 
-  const handleChange = (index) => selectedAnswer === index ? setSelectedAnswer(null) : setSelectedAnswer(index);
+  const handleChange = (index: number) => selectedAnswer === index ? setSelectedAnswer(null) : setSelectedAnswer(index);
 
   const faqData = [
     {

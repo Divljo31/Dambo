@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import dumbo from '../assets/dumbo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -8,10 +8,7 @@ import menuCloseBtn from '../assets/close.png'
 import Menu from './Menu'
 
 const Header = () => {
-    const [isOpen, setIsOpen] = useState(false);
-    const handleMenuClick = () => {
-        setIsOpen(!isOpen);
-    }
+    const [isOpen, setIsOpen] = useState<boolean>(false);
 
     return (
         <div className='header'>
@@ -29,7 +26,7 @@ const Header = () => {
                     <FontAwesomeIcon icon={faInstagram} style={{color: "#fff"}} className='icon'/>
                 </div>
             </div>
-            <div className="menu-btn" onClick={handleMenuClick}>
+            <div className="menu-btn" onClick={() => setIsOpen(!isOpen)}>
                 {isOpen ? (
                     <img src={menuCloseBtn} alt="menu-icon" className='menu-icon' />
                 ) : (
