@@ -1,9 +1,11 @@
-import React from 'react'
 import { TextareaAutosize } from '@mui/base/TextareaAutosize';
 import { styled } from '@mui/system';
 
+interface EmptyTextareaProps {
+  name: string
+}
 
-const EmptyTextarea = ({name}) => {
+const EmptyTextarea = (props: EmptyTextareaProps) => {
     const blue = {
         100: '#DAECFF',
         200: '#b6daff',
@@ -60,7 +62,7 @@ const EmptyTextarea = ({name}) => {
       `,
       );
     
-      return <StyledTextarea name={name} aria-label="empty textarea" minRows={3} maxRows={7} placeholder="Napisite poruku..." />;
+      return <StyledTextarea name={props.name} aria-label="empty textarea" minRows={3} maxRows={7} placeholder="Napisite poruku..." />;
 }
 
 export default EmptyTextarea
