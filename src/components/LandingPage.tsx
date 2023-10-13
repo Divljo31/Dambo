@@ -1,9 +1,4 @@
-import React, { Component } from 'react'
-import Header from './Header'
-
-
 const LandingPage = () => {
-
   return (
     <div className='bg-image'>
       <div className="overlay"></div>
@@ -13,7 +8,6 @@ const LandingPage = () => {
             <h2 className='title2'>Welcome to Dambo</h2>
           </div>
         </div>
-      
     </div>
   )
 }
