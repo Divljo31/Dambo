@@ -1,0 +1,111 @@
+.faq-section {
+    display: flex;
+    justify-content: center ;
+    margin-top: 100px;
+
+
+    .container {
+        width: 1300px;
+        text-align: center;
+
+        .title {
+            font-size: 60px;
+            margin: 0;
+        }
+
+        .questions {
+            display: flex;
+            flex-direction: column;
+            margin: 50px 0;
+            gap: 30px;
+
+            .qna-wrapper {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 20px;
+
+                .open-btn {
+                    transition: all ease 0.3s;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 4px solid #32355d;
+                    border-radius: 5px;
+                    font-size: 28px;
+                    font-weight: 600;
+                    width: 25px;
+                    height: 25px;
+                    cursor: pointer;
+                }
+                .qna {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    .question {
+                        font-size: 24px;
+                        font-weight: 600;
+                        text-align: left;
+                    }
+                    .answer {
+                        text-align: left;
+                        font-size: 18px;
+                        width: 1000px;
+                        max-height: 0px;
+                        opacity: 0;
+                        margin: 0;
+                        transition: all ease 0.3s;
+                        p {
+                            margin: 0;
+                        }
+                    }
+
+                    &.open {
+                        .answer {
+                            max-height: 100px;
+                            opacity: 1;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .faq-section {
+        .container {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            max-width: 380px;
+
+            .title {
+                font-size: 2.5em;
+            }
+
+            .questions {
+                .qna-wrapper {
+                    .open-btn {
+                        width: 20px;
+                        height: 20px;
+                        border: 3px solid #32355d;
+                        font-size: 1.5em;
+                    }
+                    .qna {
+                        .question {
+                            font-size: 1.1em;
+                            font-weight: 500;
+                            text-align: left;
+                        }
+                        .answer {
+                            width: 300px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
