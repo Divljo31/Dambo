@@ -1,6 +1,6 @@
 import { TextField } from '@mui/material';
 import React, { useRef } from 'react';
-import EmptyTextarea from './EmptyTextarea';
+import EmptyTextarea from '../pages/Home/components/EmptyTextarea';
 import dumbo from '../assets/dumbo.png';
 import igLogo from '../assets/instagram.png';
 import fbLogo from '../assets/facebook.png';
