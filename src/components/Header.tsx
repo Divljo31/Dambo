@@ -6,6 +6,7 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import menuOpenBtn from '../assets/menu.png'
 import menuCloseBtn from '../assets/close.png'
 import Menu from './Menu'
+import '../styles/Header.scss'
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
