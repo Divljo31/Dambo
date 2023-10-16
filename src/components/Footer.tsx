@@ -8,7 +8,7 @@ import waLogo from '../assets/whatsapp.png';
 import viLogo from '../assets/viber.png';
 import Button from '@mui/material/Button';
 import emailjs from '@emailjs/browser';
-
+import '../styles/Footer.scss'
 
 
 const Footer = () => {

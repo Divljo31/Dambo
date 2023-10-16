@@ -2,8 +2,8 @@ import './styles.scss'
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './pages/Home/Home';
-import Cenovnik from './pages/Cenovnik';
-import Kontakt from './pages/Kontakt';
+import Cenovnik from './pages/Cenovnik/Cenovnik';
+import Kontakt from './pages/Kontakt/Kontakt';
 
 const Layout = () => {
   return (
