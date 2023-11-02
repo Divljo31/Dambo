@@ -11,21 +11,21 @@ const InfoSection = () => {
         <div className="info-section">
             <div className="container">
                 <div className="info">
-                    <motion.div className="item" transition={{ ease: "easeOut" }} initial={{ x: -100, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }}>
+                    <motion.div className="item" viewport={{ once: true }} transition={{ ease: "easeOut" }} initial={{ x: -100, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }}>
                         <div className="circle"><img src={house} alt="info-icon" /></div>
                         <div className="info-text-wrapper">
                             <h2 className='info-heading'>Babysitting</h2>
                             <p className='text'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </motion.div>
-                    <motion.div className="item" transition={{ ease: "easeOut" }} initial={{ x: -100, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }}>
+                    <motion.div className="item" viewport={{ once: true }} transition={{ ease: "easeOut" }} initial={{ x: -100, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }}>
                         <div className="circle"><img src={cake} alt="info-icon" /></div>
                         <div className="info-text-wrapper">
                             <h2 className='info-heading'>Baby shower</h2>
                             <p className='text'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div>
                     </motion.div>
-                    <motion.div className="item" transition={{ ease: "easeOut" }} initial={{ x: -100, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }}>
+                    <motion.div className="item" viewport={{ once: true }} transition={{ ease: "easeOut" }} initial={{ x: -100, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }}>
                         <div className="circle"><img src={baloons} alt="info-icon" /></div> 
                         <div className="info-text-wrapper">
                             <h2 className='info-heading'>Full-Time Nanny</h2>

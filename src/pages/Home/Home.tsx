@@ -1,19 +1,16 @@
-import LandingPage from './components/LandingPage'
+import LandingPage from './components/HeroSection'
 import InfoSection from './components/InfoSection'
 import Faq from './components/Faq'
-import Footer from '../../components/Footer'
 import './Styles/Faq.scss'
-import './Styles/LandingPage.scss'
+import './Styles/HeroSection.scss'
 import './Styles/InfoSection.scss'
-
 
 const Home = () => {
   return (
     <>
       <LandingPage />
       <InfoSection />
-      <Faq />
-      <Footer/>        
+      <Faq />      
     </>
   )
 }
