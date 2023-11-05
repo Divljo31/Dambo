@@ -9,14 +9,12 @@ interface Props{
 }
 
 const PricingCard: React.FC<Props> = ({ title, description, price, bgColor}) => {
-    return(
-       
-       <div style={{margin: '10px',  border:'10px', textAlign: 'center',  backgroundColor: bgColor, padding: '10px', height:'300px', width: '300px', borderRadius:'10px'}}>
-        <h2>{title}</h2>
+    return( 
+        <div className="card" style={{backgroundColor: bgColor}}>
+            <h2>{title}</h2>
             <p>{description}</p>
             <p>${price}</p>
         </div>
-
     );
 }
 

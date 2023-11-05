@@ -10,9 +10,8 @@ const Menu: React.FC<MenuProps> = (props) => {
         <div className={`menu ${props.isOpen ? 'open' : ''}`}>
             <ul>
                 <Link to={'/'} className='header-link'>Home</Link>
-                <Link to={'/'} className='header-link'>Cenovnik</Link>
-                <Link to={'/'} className='header-link'>Kontakt</Link>
-                <Link to={'/'} className='header-link'>Rezervacija</Link>
+                <Link to={'/cenovnik'} className='header-link'>Cenovnik</Link>
+                <Link to={'/kontakt'} className='header-link'>Kontakt</Link>
             </ul>
         </div>
     )

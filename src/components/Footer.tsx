@@ -55,7 +55,6 @@ const Footer = () => {
               <TextField className="white-border" id="filled-basic" type='email' name='user_email' label="Email" variant="filled" />
               <TextField className="white-border" id="filled-basic" type='text' name='user_name' label="Ime i Prezime" variant="filled" />
               <EmptyTextarea name={'message'} /> 
-              {/*Sve se menja u emptytextarea.jsx  */}
               <Button type='submit' variant='contained'>Send</Button>
           </form>
         </div>
