@@ -1,84 +1,130 @@
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
 .info-section {
     display: flex;
+    flex-direction: column;
     justify-content: center;
 
-    .container {
-        width: 1300px;
-        height: 100%;
+    .info {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
 
-        .info {
+        .item {
             display: flex;
             justify-content: center;
-            margin-top: 100px;
-            margin-bottom: 100px;
+            align-items: center;
+            gap: 40px;
+            .circle {
+                width: 90px;
+                height: 90px;
+                border-radius: 50%;
+                background-color: #FCF4EB;
+            }
+        }
+    }
 
-            .item {
+    .time-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+
+        .benefit-div {
+            flex: 1;
+        }
+
+        .benefit-list{
+            list-style: none;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+            
+            li {
                 display: flex;
-                justify-content: center;
+                flex-direction: row;
+                justify-content: start;
                 align-items: center;
-                gap: 40px;
-                .circle {
-                    width: 90px;
-                    height: 90px;
-                    border-radius: 50%;
-                    background-color: #FCF4EB;
+                gap: 10px;
+                padding: 10px;
+                font-size: 18px;
+
+                .check-image {
+                    height: 30px;
+                    width: 30px;
+                }
+
+                p {
+                    margin: 0;
+                }
+            }
+        }
+        
+
+        .worktime-div{
+            flex: 1;
+            background-color: rgba(215,245,250,.4);
+            border: 1px solid #d7f5fa;
+            border-radius: 10px;
+            padding-bottom: 20px;
+
+            .table-h3 {
+                text-align: center;
+                margin: 20px 0;
+                color: #32355d;
+                font-weight: bold;
+                font-size: 30px;
+                line-height: 1.4em;
+            }
+
+            table {
+                width: 100%;
+                text-align: center;
+
+                th {
+                    width: 33%;
+                    font-size: 1.5rem;
+                }
+                td {
+                    font-size: 1.2rem;
+                    font-weight: 500;
                 }
             }
         }
 
-        .time-wrapper {
+        
+
+        
+        .calendar-div{
+            flex: 1;
+            text-align: center;
             display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             gap: 20px;
 
-            .benefit-div {
-                flex: 1;
-            }
+            .rezervisi-btn {
+                font-family: 'Baloo 2', cursive;
+                padding: 5px 20px;
+                border-radius: 15px;
+                border: none;
+                background-color: #DCE086;
+                font-size: 20px;
+                cursor: pointer;
+                transition: all ease 0.3s;
 
-            .benefit-list{
-                list-style: none;
-                text-align: left;
-                display: flex;
-                flex-direction: column;
-                gap: 20px;
-                padding: 0;
-                margin: 0;
-                
-                li {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: start;
-                    align-items: center;
-                    gap: 10px;
-                    padding: 10px;
-                    font-size: 18px;
-
-                    .check-image {
-                        height: 30px;
-                        width: 30px;
-                    }
-
-                    p {
-                        margin: 0;
-                    }
-                }
-            }
-            
-
-            .worktime-div{
-                flex: 1;
-                background-color: rgba(215,245,250,.4);
-                border: 1px solid #d7f5fa;
-                border-radius: 10px;
-
-                .table-h3 {
-                    text-align: center;
-                    margin: 20px 0;
-                    color: #32355d;
-                    font-weight: bold;
-                    font-size: 30px;
-                    line-height: 1.4em;
+                &:hover {
+                    background-color: #d3db46;
                 }
 
                 table {
@@ -94,68 +140,109 @@
                         font-size: 1.2rem;
                         font-weight: 500;
                     }
+                &:active {
+                    transform: scale(1.05);
                 }
             }
+        }
 
-            
+    }
+}
 
-            
-            .calendar-div{
-                flex: 1;
-                text-align: center;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                gap: 20px;
+@media only screen and (max-width: 1300px) {
+    .container {
+        max-width: 1000px;
+    }
+}
 
-                .rezervisi-btn {
-                    font-family: 'Baloo 2', cursive;
-                    padding: 5px 20px;
-                    border-radius: 15px;
-                    border: none;
-                    background-color: #DCE086;
-                    font-size: 20px;
-                    cursor: pointer;
-                    transition: all ease 0.3s;
+@media only screen and (max-width: 1000px) {
+    .container {
+        max-width: 700px;
+    }
 
-                    &:hover {
-                        background-color: #d3db46;
-                    }
+    .info-section {
+        .info {
+            flex-direction: column;
+            gap: 40px;
+        }
 
-                    &:active {
-                        transform: scale(1.05);
-                    }
-                }
+        .time-wrapper {
+            flex-direction: column;
+            gap: 100px;
+            .worktime-div {
+                width: 80%;
+                margin: 0 auto;
             }
+        }
+    }
+}
 
+@media only screen and (max-width: 700px) {
+    .container {
+        max-width: 500px;
+    }
+    .info-section {
+        .time-wrapper {
+            .worktime-div {
+                width: 100%;
+            }
         }
     }
 }
 
 @media only screen and (max-width: 480px) {
-    .info-section {
-        .container {
+    .container {
             max-width: 380px;
-            .info {
-                flex-direction: column;
-                margin: 70px 0;
-            }
-            .time-wrapper {
-                flex-direction: column;
-                gap: 60px;
-                .benefit-div {
-                    .benefit-list {
-                        padding: 0;
-                    }
+            justify-content: center;
+    }
+    .info-section {
+        .info {
+            flex-direction: column;
+            margin: 70px 0;
+        }
+
+        .time-wrapper {
+            flex-direction: column;
+            gap: 60px;
+
+            .benefit-div {
+                .benefit-list {
+                    padding: 0;
                 }
-                .worktime-div {
-                    table {
-                        padding-bottom: 20px;
-                    }
+            }
+
+            .worktime-div {
+                table {
+                    padding-bottom: 20px;
+                }
+            }
+            .worktime-div{
+            flex: 1;
+            background-color: rgba(215,245,250,.4);
+            border: 1px solid #d7f5fa;
+            border-radius: 10px;
+
+            .table-h3 {
+                text-align: center;
+                margin: 20px 0;
+                color: #32355d;
+                font-weight: bold;
+                font-size: 30px;
+                line-height: 1.4em;
+            }
+
+            table {
+                text-align: center;
+
+                th {
+                    width: 33%;
+                    font-size: 1.2rem;
+                }
+                td {
+                    font-size: 1rem;
+                    font-weight: 500;
                 }
             }
         }
     }
 }
-

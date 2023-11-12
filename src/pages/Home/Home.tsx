@@ -9,8 +9,10 @@ const Home = () => {
   return (
     <>
       <LandingPage />
-      <InfoSection />
-      <Faq />      
+      <div className="container">
+        <InfoSection />
+        <Faq />      
+      </div>
     </>
   )
 }

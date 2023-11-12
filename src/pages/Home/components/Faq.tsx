@@ -26,7 +26,6 @@ const Faq = () => {
 
   return (
     <div className='faq-section'>
-      <div className="container">
         <h1 className='title'>Cesto postavljana pitanja</h1>
         <div className="questions">
           {faqData.map((item, index) => (
@@ -46,7 +45,6 @@ const Faq = () => {
           ))}
 
         </div>
-      </div>
     </div>
   )
 }
