@@ -18,7 +18,10 @@ const Header = () => {
                 <Link to={'/'}><motion.img whileHover={{ scale: 1.075 }} src={dumbo} className='header-logo'/></Link>
                 <ul>
                     <Link to={'/'} className='header-link'>Pocetna</Link>
-                    <Link to={'/cenovnik'} className='header-link'>Cenovnik</Link>
+                    <Link to={'/o_nama'} className='header-link'>O nama</Link>
+                    <Link to={'/igraonica'} className='header-link'>Igraonica</Link>
+                    <Link to={'/rodjendaonica'} className='header-link'>Rodjendaonica</Link>
+                    {/* <Link to={'/cenovnik'} className='header-link'>Cenovnik</Link> */}
                     <Link to={'/kontakt'} className='header-link'>Kontakt</Link>
                 </ul>
             </div>
