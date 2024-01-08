@@ -1,20 +1,16 @@
-$primary-color: #32355D;
+$primary-color: #32355d;
 $accent-color: white;
 
 footer {
   color: white;
-  background-color:#32355D;
   position: relative;
   padding-bottom: 50px;
-
-  &::before {
-    content: url("../assets/wave_up.svg");
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 250px;
-    z-index: -10;
-  }
+  top: 0;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+  background-image: url("../assets/footer.png");
+  background-repeat: no-repeat;
 
   .container {
     max-width: 1300px;
@@ -27,76 +23,70 @@ footer {
   }
 
   .left-section {
-      display: flex;
-      flex-direction: column;
-      text-align: left;
-  
-      .footer-logo {
-        width: 200px;
-      }
-  
-      .social-icon {
-        margin: 5px;
-        width: 30px;
-        height: 30px;
-      }
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    p {
+      color: #000;
     }
-  
-    .right-section {
-      text-align: left;
+
+    .footer-logo {
+      width: 200px;
     }
-  
-    .brand-info p {
-      margin: 0;
+
+    .social-icon {
+      margin: 5px;
+      width: 30px;
+      height: 30px;
     }
-  
-    .social-icons {
-      margin-top: 10px;
-    }
-  
-    .icon:hover {
-      color: $accent-color;
-      /* Adjust hover color as needed */
-    }
-  
-    h2 {
-      margin-bottom: 10px;
-    }
-  
-    .right-section {
-  
+  }
+
+
+  .social-icons {
+    margin-top: 10px;
+  }
+
+  .icon:hover {
+    color: $accent-color;
+    /* Adjust hover color as needed */
+  }
+
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  .right-section {
+    color: white;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+
+    form {
       color: white;
-      text-align: left;
       display: flex;
+      gap: 20px;
       flex-direction: column;
-  
-      form {
-        color: white;
-        display: flex;
-        gap: 20px;
-        flex-direction: column;
-        max-width: 400px;
-        position: relative;
+      max-width: 400px;
+      position: relative;
 
-        .send-btn {
-          width: 160px;
-          position: "absolute";
-          bottom: -5px;
-          font-family: 'Baloo 2', cursive;
-          border-radius: 10px;
-        }
-      }
-  
-      .white-border {
-        & .MuiFilledInput-root {
-          border-color: white; // Set the border color to white
-          background-color: white; // set background color to white
-  
-        }
+      .send-btn {
+        width: 160px;
+        position: "absolute";
+        bottom: -5px;
+        font-family: "Baloo 2", cursive;
+        border-radius: 10px;
       }
     }
-}
 
+    .white-border {
+      & .MuiFilledInput-root {
+        border-color: white; // Set the border color to white
+        background-color: white; // set background color to white
+      }
+    }
+  }
+}
 
 @media only screen and (max-width: 480px) {
   footer {

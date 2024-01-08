@@ -1,15 +1,7 @@
 .cenovnik {
-    margin-bottom: 120px;
+    margin-bottom: 100px;
+    margin-top: 400px;
     position: relative;
-
-    .bg-wave {
-        background-image: url("../../../assets/wave.svg");
-        background-size: cover;
-        position: absolute;
-        left: 0;
-        right: 0;
-        height: 400px;
-    }
 
     .cenovnik-container {
         display: flex;
@@ -19,20 +11,6 @@
         margin: 0 auto;
         padding: 0 10px;
 
-        .cenovnik-header {
-            display: flex;
-            flex-direction: column;
-            text-align: left;
-            z-index: 200;
-            margin-top: 160px;
-
-            .cenovnik-title {
-                color: #fff;
-                font-size: 100px;
-                margin: 20px 0 0 70px;
-                height: 120px;
-            }
-        }
         .pricingCard-container {
             display: flex;
             flex-direction: row;
