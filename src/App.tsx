@@ -3,7 +3,7 @@ import "./styles/Header.scss"
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './pages/Home/Home';
-import Cenovnik from './pages/Cenovnik/Cenovnik';
+//import Cenovnik from './pages/Cenovnik/Cenovnik';
 import Kontakt from './pages/Kontakt/Kontakt';
 import Footer from './components/Footer';
 import O_Nama from './pages/O nama/O_Nama';
