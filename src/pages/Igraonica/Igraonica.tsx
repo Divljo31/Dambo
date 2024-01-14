@@ -1,9 +1,9 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
-import "./Styles/Cuvaonica.scss";
+import "./Styles/Igraonica.scss";
 import rImage from "../../assets/cuvaonica.png";
-import priceCard from "../../assets/price-card.png"
+import priceCard from "../../assets/price-card.png";
 
-const Cuvaonica = () => {
+const Igraonica = () => {
   return (
     <Container maxWidth="xl" sx={{ mt: 40 }}>
       <Grid container alignItems="center" spacing={10}>
@@ -24,10 +24,7 @@ const Cuvaonica = () => {
           <Box component="img" src={rImage} maxWidth="100%" />
         </Grid>
       </Grid>
-      <Typography
-        variant="h1"
-        sx={{ mt: 10}}
-      >
+      <Typography variant="h1" sx={{ mt: 10 }}>
         Cenovnik
       </Typography>
       <Grid container>
@@ -59,4 +56,4 @@ const Cuvaonica = () => {
   );
 };
 
-export default Cuvaonica;
+export default Igraonica;

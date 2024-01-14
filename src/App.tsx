@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './pages/Home/Home';
 import Rodjendaonica from './pages/Rodjendaonica/Rodjendaonica';
-import Cuvaonica from "./pages/Cuvaonica/Cuvaonica";
+import Igraonica from "./pages/Igraonica/Igraonica";
 import Kontakt from './pages/Kontakt/Kontakt';
 import Footer from './components/Footer';
 import O_Nama from './pages/O nama/O_Nama';
@@ -59,7 +59,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/cuvaonica",
-        element: <Cuvaonica />,
+        element: <Igraonica />,
       },
       {
         path: "/kontakt",
