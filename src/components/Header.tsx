@@ -1,22 +1,32 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import dumbo from "../assets/dumbo.png";
-import Menu from "./Menu";
 import "../styles/Header.scss";
 import {
   AppBar,
   Box,
   Container,
+  IconButton,
   List,
   Toolbar,
 } from "@mui/material";
+// import HamburgerIcon from "./HamburgerIcon";
+import Hamburger from "hamburger-react";
+import { AnimatePresence, motion } from "framer-motion";
+import { useClickAway } from "react-use";
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [isOpen, setOpen] = useState(false);
+  const ref = useRef(null);
+
+  useClickAway(ref, () => setOpen(false));
 
   return (
     <AppBar className="nav">
-      <Toolbar className="cloud-navbar">
+      <Toolbar
+        className="cloud-navbar"
+        sx={{ backgroundPositionY: { xs: "-75px" } }}
+      >
         <Container
           maxWidth="xl"
           sx={{
@@ -34,8 +44,11 @@ const Header = () => {
               <Link to={"/"} className="header-link">
                 Pocetna
               </Link>
-              <Link to={"/cenovnik"} className="header-link">
-                Cenovnik
+              <Link to={"/rodjendaonica"} className="header-link">
+                Rodjendaonica
+              </Link>
+              <Link to={"/cuvaonica"} className="header-link">
+                Cuvaonica
               </Link>
               <Link to={"/kontakt"} className="header-link">
                 Kontakt
@@ -45,7 +58,89 @@ const Header = () => {
               </Link>
             </List>
           </Box>
-
+          <Box
+            sx={{
+              mr: 2,
+              display: {
+                xs: "block",
+                md: "none",
+              },
+            }}
+          >
+            <IconButton edge="start" color="inherit">
+              <Hamburger
+                toggled={isOpen}
+                toggle={setOpen}
+                color="#32355d"
+                rounded
+              />
+            </IconButton>
+            <AnimatePresence>
+              {isOpen && (
+                <Box
+                  sx={{
+                    position: "absolute",
+                    left: 0,
+                    top: "250px",
+                    width: "100%",
+                    bgcolor: "#D7F5FA",
+                    borderRadius: 22,
+                    padding: 8,
+                  }}
+                  component={motion.div}
+                  initial={{ opacity: 0, translateX: 500 }}
+                  animate={{ opacity: 1, translateX: 150 }}
+                  exit={{ opacity: 0, translateX: 500 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <List
+                    sx={{
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "flex-start",
+                      // paddingLeft: 10
+                    }}
+                  >
+                    <Link
+                      to={"/"}
+                      onClick={() => setOpen((prev) => !prev)}
+                      className="header-link"
+                    >
+                      Pocetna
+                    </Link>
+                    <Link
+                      to={"/rodjendaonica"}
+                      onClick={() => setOpen((prev) => !prev)}
+                      className="header-link"
+                    >
+                      Rodjendaonica
+                    </Link>
+                    <Link
+                      to={"/cuvaonica"}
+                      onClick={() => setOpen((prev) => !prev)}
+                      className="header-link"
+                    >
+                      Cuvaonica
+                    </Link>
+                    <Link
+                      to={"/kontakt"}
+                      onClick={() => setOpen((prev) => !prev)}
+                      className="header-link"
+                    >
+                      Kontakt
+                    </Link>
+                    <Link
+                      to={"/o-nama"}
+                      onClick={() => setOpen((prev) => !prev)}
+                      className="header-link"
+                    >
+                      O nama
+                    </Link>
+                  </List>
+                </Box>
+              )}
+            </AnimatePresence>
+          </Box>
         </Container>
       </Toolbar>
     </AppBar>

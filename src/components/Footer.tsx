@@ -1,6 +1,5 @@
-import { Box, Container, TextField } from "@mui/material";
+import { Box, Container, Grid, TextField, TextareaAutosize, Typography } from "@mui/material";
 import React, { useRef } from "react";
-import EmptyTextarea from "../pages/Home/components/EmptyTextarea";
 import dumbo from "../assets/dumbo.png";
 import igLogo from "../assets/instagram.png";
 import fbLogo from "../assets/facebook.png";
@@ -34,91 +33,92 @@ const Footer = () => {
 
   return (
     <Box component="footer">
-      <Container maxWidth="xl" sx={{display: "flex", justifyContent: "space-between"}}>
-        <div className="left-section">
-          <div className="brand-info">
-            <img src={dumbo} className="footer-logo" />
-            <p>Dambo</p>
-            <p>&copy; Bar & Play</p>
-            <p>Telefon: +381 65 444 444</p>
-          </div>
-          <div className="social-icons">
-            <a href="#" className="icon">
-              <img src={igLogo} className="social-icon" />
-            </a>
-            <a href="#" className="icon">
-              <img src={fbLogo} className="social-icon" />
-            </a>
-            <a href="#" className="icon">
-              <img src={waLogo} className="social-icon" />
-            </a>
-            <a href="#" className="icon">
-              <img src={viLogo} className="social-icon" />
-            </a>
-          </div>
-        </div>
-        <div className="right-section">
-          <h2>Kontaktirajte nas</h2>
-          <form ref={form} onSubmit={sendEmail}>
-              <TextField className="white-border" id="filled-basic" type='email' name='user_email' label="Email" variant="filled" />
-              <TextField className="white-border" id="filled-basic" type='text' name='user_name' label="Ime i Prezime" variant="filled" />
-              <EmptyTextarea name={'message'} />
-              <Button type='submit' variant='contained'>Send</Button>
-          </form>
-        </div>
+      <Container maxWidth="xl">
+        <Grid
+          container
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            marginTop: 5,
+          }}
+        >
+          <Grid item className="left-section" sm={6}>
+            <div className="brand-info">
+              <img src={dumbo} className="footer-logo" />
+              <p>Dambo</p>
+              <p>&copy; Bar & Play</p>
+              <p>Telefon: +381 65 444 444</p>
+            </div>
+            <div className="social-icons">
+              <a href="#" className="icon">
+                <img src={igLogo} className="social-icon" />
+              </a>
+              <a href="#" className="icon">
+                <img src={fbLogo} className="social-icon" />
+              </a>
+              <a href="#" className="icon">
+                <img src={waLogo} className="social-icon" />
+              </a>
+              <a href="#" className="icon">
+                <img src={viLogo} className="social-icon" />
+              </a>
+            </div>
+          </Grid>
+          <Grid
+            item
+            className="right-section"
+            sm={6}
+            sx={{
+              display: "flex",
+              alignItems: "end",
+              flexDirection: "column",
+            }}
+          >
+            <Box
+              component="form"
+              ref={form}
+              onSubmit={sendEmail}
+              sx={{
+                display: "flex",
+                alignItems: "end",
+                flexDirection: "column",
+                gap: 2,
+                width: "330px",  
+              }}
+            >
+              <TextField
+                className="white-border"
+                id="filled-basic"
+                type="email"
+                name="user_email"
+                label="Email"
+                variant="filled"
+                sx={{ width: "100%" }}
+              />
+              <TextField
+                className="white-border"
+                id="filled-basic"
+                type="text"
+                name="user_name"
+                label="Ime i Prezime"
+                variant="filled"
+                sx={{ width: "100%" }}
+              />
+              <TextareaAutosize
+                className="input-form"
+                placeholder="Napisite poruku..."
+                maxRows={5}
+                style={{ height: 100, width: "98%" }}
+              />
+              <Button type="submit" variant="contained">
+                Send
+              </Button>
+            </Box>
+          </Grid>
+        </Grid>
       </Container>
     </Box>
-    // <footer>
-    //   <div className="container">
-    //     <div className="left-section">
-    //       <div className="brand-info">
-    //         <img src={dumbo} className="footer-logo" />
-    //         <p>Dambo</p>
-    //         <p>&copy; Bar & Play</p>
-    //         <p>Telefon: +381 65 444 444</p>
-    //       </div>
-    //       <div className="social-icons">
-    //         <a href="#" className="icon">
-    //           <img src={igLogo} className="social-icon" />
-    //         </a>
-    //         <a href="#" className="icon">
-    //           <img src={fbLogo} className="social-icon" />
-    //         </a>
-    //         <a href="#" className="icon">
-    //           <img src={waLogo} className="social-icon" />
-    //         </a>
-    //         <a href="#" className="icon">
-    //           <img src={viLogo} className="social-icon" />
-    //         </a>
-    //       </div>
-    //     </div>
-    //     <div className="right-section">
-    //       <h2>Kontaktirajte nas</h2>
-    //       <form ref={form} onSubmit={sendEmail}>
-    //         <TextField
-    //           className="white-border"
-    //           id="filled-basic"
-    //           type="email"
-    //           name="user_email"
-    //           label="Email"
-    //           variant="filled"
-    //         />
-    //         <TextField
-    //           className="white-border"
-    //           id="filled-basic"
-    //           type="text"
-    //           name="user_name"
-    //           label="Ime i Prezime"
-    //           variant="filled"
-    //         />
-    //         <EmptyTextarea name={"message"} />
-    //         <Button type="submit" variant="contained">
-    //           Send
-    //         </Button>
-    //       </form>
-    //     </div>
-    //   </div>
-    // </footer>
   );
 };
 

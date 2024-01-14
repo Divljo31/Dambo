@@ -1,4 +1,4 @@
-import "./Styles/Cenovnik.scss"
+import "./Styles/Rodjendaonica.scss"
 import PricingCard from './components/PricingCard'
 
 

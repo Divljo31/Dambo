@@ -3,10 +3,36 @@ import "./styles/Header.scss"
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './pages/Home/Home';
-import Cenovnik from './pages/Cenovnik/Cenovnik';
+import Rodjendaonica from './pages/Rodjendaonica/Rodjendaonica';
+import Cuvaonica from "./pages/Cuvaonica/Cuvaonica";
 import Kontakt from './pages/Kontakt/Kontakt';
 import Footer from './components/Footer';
 import O_Nama from './pages/O nama/O_Nama';
+import { createTheme, ThemeProvider } from "@mui/material";
+
+const theme = createTheme({
+  typography: {
+    fontFamily: "'Baloo 2', cursive",
+    h1: {
+      fontWeight: "bold"
+    },
+    h5: {
+      fontWeight: "bold"
+    },
+    body1: {
+      fontWeight: "600"
+    }
+  },
+  components: {
+    MuiCssBaseline: {
+      styleOverrides: `
+        @font-face {
+          font-weight: "bold"
+        }
+      `
+    }
+  }
+});
 
 const Layout = () => {
   return (
@@ -28,8 +54,12 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/cenovnik",
-        element: <Cenovnik />,
+        path: "/rodjendaonica",
+        element: <Rodjendaonica />,
+      },
+      {
+        path: "/cuvaonica",
+        element: <Cuvaonica />,
       },
       {
         path: "/kontakt",
@@ -45,9 +75,9 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <RouterProvider router={router} />
-    </>
+    </ThemeProvider>
   )
 }
 
