@@ -1,3 +1,57 @@
+.nav {
+    position: fixed !important;
+    width: 100%;
+    height: 300px;
+    z-index: 100; 
+    background-color: transparent !important;
+    box-shadow: none !important;
+
+    .cloud-navbar {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url("../assets/talasi.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+    }
+
+    ul {
+        display: flex;
+        gap: 50px;
+        font-size: 30px;
+        font-weight: 700;
+
+        .header-link {
+            text-decoration: none;
+            color: #32355d;
+            position: relative;
+            z-index: 1;
+
+            &::before {
+                content: '';
+                background-color: #f85f89;
+                width: 0%;
+                height: 8px;
+                position: absolute;
+                bottom: 5px;
+                transition: all ease 0.3s;
+                z-index: -1;
+            }
+
+            &:hover {
+                &::before {
+                    content: '';
+                    width: 100%;
+                    height: 8px;
+                    position: absolute;
+                }
+            }
+        }
+    }
+}
+
 .header {
     width: 1300px;
     display: flex;

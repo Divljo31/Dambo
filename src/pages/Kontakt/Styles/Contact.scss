@@ -1,147 +1,137 @@
-.contact {
-    position: relative;
+// .contact {
 
-    .bg-wave {
-        background-image: url("../../../assets/wave.svg");
-        background-size: cover;
-        position: absolute;
-        left: 0;
-        right: 0;
-        height: 400px;
-    }
+//     .contact-container {
+//         display: flex;
+//         flex-direction: column;
+//         max-width: 1300px;
+//         margin: 0 auto;
 
-    .contact-container {
-        display: flex;
-        flex-direction: column;
-        max-width: 1300px;
-        margin: 0 auto;
+//         .header-section {
+//             display: flex;
+//             flex-direction: column;
+//             text-align: left;
+//             z-index: 200;
+//             color: #fff;
+//             margin-top: 160px;
 
-        .header-section {
-            display: flex;
-            flex-direction: column;
-            text-align: left;
-            z-index: 200;
-            color: #fff;
-            margin-top: 160px;
-
-            h1 {
-                margin: 0;
-                font-size: 100px;
-                margin: 20px 0 0 70px;
-            }
-        }
+//             h1 {
+//                 margin: 0;
+//                 font-size: 100px;
+//                 margin: 20px 0 0 70px;
+//             }
+//         }
         
-        .map-contactForm {
-            display: flex;
-            flex-direction: column;
-            margin: 50px 0 230px 0;
+//         .map-contactForm {
+//             display: flex;
+//             flex-direction: column;
+//             margin: 50px 0 230px 0;
 
-            .map-title {
-                margin-left: 50px;
-            }
+//             .map-title {
+//                 margin-left: 50px;
+//             }
 
-            .map-contact-wrapper {
-                display: flex;
-                align-items: center;
-                justify-content: space-evenly;
-                gap: 100px;
-            }
+//             .map-contact-wrapper {
+//                 display: flex;
+//                 align-items: center;
+//                 justify-content: space-evenly;
+//                 gap: 100px;
+//             }
 
-            .map-section {
-                max-width: 650px;
+//             .map-section {
+//                 max-width: 650px;
 
-                .map {
-                    width: 650px;
-                    height: 500px;
-                }
-            }
+//                 .map {
+//                     width: 650px;
+//                     height: 500px;
+//                 }
+//             }
 
-            .contact-form-section {
-                background-color: #8aeee6;
-                padding: 20px;
-                border-radius: 10px;
-                width: 400px;
-                height: 400px;
+//             .contact-form-section {
+//                 background-color: #8aeee6;
+//                 padding: 20px;
+//                 border-radius: 10px;
+//                 width: 400px;
+//                 height: 400px;
 
-                h2 {
-                    margin-bottom: 20px;
-                    font-size: 1.5em;
-                }
+//                 h2 {
+//                     margin-bottom: 20px;
+//                     font-size: 1.5em;
+//                 }
 
-                form {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 10px;
-                    max-width: 400px;
-                }
-                input, textarea {
-                    padding: 10px;
-                    border: none;
-                    border-radius: 5px;
-                    outline: none;
-                    transition: border 0.3s;
-                }
-                input:focus, textarea:focus {
-                    border: 2px solid #82ccdd;
-                }
-                button {
-                    align-self: center;
-                    padding: 10px 30px;
-                    background-color: #FF6F96;
-                    color: white;
-                    border: none;
-                    border-radius: 5px;
-                    cursor: pointer;
-                    transition: background-color 0.3s;
-                }
-                .input-form {
-                    background-color: #7DD1CA;
-                }
-            }
-        }  
-    }
-}
+//                 form {
+//                     display: flex;
+//                     flex-direction: column;
+//                     gap: 10px;
+//                     max-width: 400px;
+//                 }
+//                 input, textarea {
+//                     padding: 10px;
+//                     border: none;
+//                     border-radius: 5px;
+//                     outline: none;
+//                     transition: border 0.3s;
+//                 }
+//                 input:focus, textarea:focus {
+//                     border: 2px solid #82ccdd;
+//                 }
+//                 button {
+//                     align-self: center;
+//                     padding: 10px 30px;
+//                     background-color: #FF6F96;
+//                     color: white;
+//                     border: none;
+//                     border-radius: 5px;
+//                     cursor: pointer;
+//                     transition: background-color 0.3s;
+//                 }
+//                 .input-form {
+//                     background-color: #7DD1CA;
+//                 }
+//             }
+//         }  
+//     }
+// }
 
-@media only screen and (max-width: 1300px) {}
+// @media only screen and (max-width: 1300px) {}
 
-@media only screen and (max-width: 1000px) {}
+// @media only screen and (max-width: 1000px) {}
 
-@media only screen and (max-width: 700px) {}
+// @media only screen and (max-width: 700px) {}
 
-@media only screen and (max-width: 480px) {
-    .contact {
-        .contact-container {
-            max-width: 400px;
-            .header-section {
-                color: #32355d;
-                margin-top: 220px;
-                text-align: center;
-                z-index: 0;
+// @media only screen and (max-width: 480px) {
+//     .contact {
+//         .contact-container {
+//             max-width: 400px;
+//             .header-section {
+//                 color: #32355d;
+//                 margin-top: 220px;
+//                 text-align: center;
+//                 z-index: 0;
 
-                h1 {
-                    font-size: 70px;
-                    margin: 0;
-                }
-            }
+//                 h1 {
+//                     font-size: 70px;
+//                     margin: 0;
+//                 }
+//             }
 
-            .map-contactForm {
-                .map-title {
-                    align-items: center;
-                }
-                .map-section {
-                    .map {
-                        max-width: 380px;
-                        max-height: 380px;
-                    }
-                }
-                .map-contact-wrapper {
-                    flex-direction: column;
+//             .map-contactForm {
+//                 .map-title {
+//                     align-items: center;
+//                 }
+//                 .map-section {
+//                     .map {
+//                         max-width: 380px;
+//                         max-height: 380px;
+//                     }
+//                 }
+//                 .map-contact-wrapper {
+//                     flex-direction: column;
 
-                    .contact-form-section {
-                        width: 350px;
-                    }
-                }
-            }
-        }
-    }
-}
+//                     .contact-form-section {
+//                         width: 350px;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }

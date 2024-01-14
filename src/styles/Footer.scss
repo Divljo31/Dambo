@@ -1,117 +1,99 @@
-$primary-color: #32355D;
+$primary-color: #32355d;
 $accent-color: white;
 
 footer {
   color: white;
-  background-color:#32355D;
   position: relative;
   padding-bottom: 50px;
-
-  &::before {
-    content: url("../assets/wave_up.svg");
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 250px;
-    z-index: -10;
-  }
-
-  .container {
-    max-width: 1300px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    z-index: 10;
-  }
+  top: 0;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+  background-image: url("../assets/footer2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 100px;
 
   .left-section {
-      display: flex;
-      flex-direction: column;
-      text-align: left;
-  
-      .footer-logo {
-        width: 200px;
-      }
-  
-      .social-icon {
-        margin: 5px;
-        width: 30px;
-        height: 30px;
-      }
-    }
-  
-    .right-section {
-      text-align: left;
-    }
-  
-    .brand-info p {
-      margin: 0;
-    }
-  
-    .social-icons {
-      margin-top: 10px;
-    }
-  
-    .icon:hover {
-      color: $accent-color;
-      /* Adjust hover color as needed */
-    }
-  
-    h2 {
-      margin-bottom: 10px;
-    }
-  
-    .right-section {
-  
-      color: white;
-      text-align: left;
-      display: flex;
-      flex-direction: column;
-  
-      form {
-        color: white;
-        display: flex;
-        gap: 20px;
-        flex-direction: column;
-        max-width: 400px;
-        position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
 
-        .send-btn {
-          width: 160px;
-          position: "absolute";
-          bottom: -5px;
-          font-family: 'Baloo 2', cursive;
-          border-radius: 10px;
-        }
-      }
-  
-      .white-border {
-        & .MuiFilledInput-root {
-          border-color: white; // Set the border color to white
-          background-color: white; // set background color to white
-  
-        }
-      }
+    p {
+      color: #000;
     }
-}
 
+    .footer-logo {
+      width: 140px;
+    }
 
-@media only screen and (max-width: 480px) {
-  footer {
-    padding-bottom: 0;
-    .container {
-      flex-direction: column-reverse;
-      gap: 40px;
-      .right-section {
-        max-width: 360px;
-        .form {
-          textarea {
-            max-width: 360px;
-          }
-        }
-      }
+    .social-icon {
+      margin: 5px;
+      width: 30px;
+      height: 30px;
     }
   }
+
+
+  .social-icons {
+    margin-top: 10px;
+  }
+
+  .icon:hover {
+    color: $accent-color;
+    /* Adjust hover color as needed */
+  }
+
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  // .right-section {
+  //   color: white;
+  //   text-align: left;
+  //   display: flex;
+  //   flex-direction: column;
+
+    // form {
+    //   color: white;
+    //   display: flex;
+    //   gap: 20px;
+    //   flex-direction: column;
+    //   max-width: 400px;
+    //   position: relative;
+
+    //   .send-btn {
+    //     width: 160px;
+    //     position: "absolute";
+    //     bottom: -5px;
+    //     font-family: "Baloo 2", cursive;
+    //     border-radius: 10px;
+    //   }
+    // }
+
+  //   .white-border {
+  //     & .MuiFilledInput-root {
+  //       border-color: white; // Set the border color to white
+  //       background-color: white; // set background color to white
+  //     }
+  //   }
+  // }
 }
+
+// @media only screen and (max-width: 480px) {
+//   footer {
+//     padding-bottom: 0;
+//     .container {
+//       flex-direction: column-reverse;
+//       gap: 40px;
+//       .right-section {
+//         max-width: 360px;
+//         .form {
+//           textarea {
+//             max-width: 360px;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

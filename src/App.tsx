@@ -1,13 +1,38 @@
 import './styles.scss'
+import "./styles/Header.scss"
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './pages/Home/Home';
-//import Cenovnik from './pages/Cenovnik/Cenovnik';
+import Rodjendaonica from './pages/Rodjendaonica/Rodjendaonica';
+import Igraonica from "./pages/Igraonica/Igraonica";
 import Kontakt from './pages/Kontakt/Kontakt';
 import Footer from './components/Footer';
-import About from './pages/About/About';
-import Igraonica from './pages/Igraonica/Igraonica';
-import Rodjendaonica from './pages/Rodjendaonica/Rodjendaonica';
+import O_Nama from './pages/O nama/O_Nama';
+import { createTheme, ThemeProvider } from "@mui/material";
+
+const theme = createTheme({
+  typography: {
+    fontFamily: "'Baloo 2', cursive",
+    h1: {
+      fontWeight: "bold"
+    },
+    h5: {
+      fontWeight: "bold"
+    },
+    body1: {
+      fontWeight: "600"
+    }
+  },
+  components: {
+    MuiCssBaseline: {
+      styleOverrides: `
+        @font-face {
+          font-weight: "bold"
+        }
+      `
+    }
+  }
+});
 
 const Layout = () => {
   return (
@@ -26,33 +51,33 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home />
-      },
-      {
-        path: "/o_nama",
-        element: <About/>
-      },
-      {
-        path: "/igraonica",
-        element: <Igraonica/>
+        element: <Home />,
       },
       {
         path: "/rodjendaonica",
-        element: <Rodjendaonica/>
+        element: <Rodjendaonica />,
+      },
+      {
+        path: "/cuvaonica",
+        element: <Igraonica />,
       },
       {
         path: "/kontakt",
-        element: <Kontakt />
-      }
-    ]
-  }
-])
+        element: <Kontakt />,
+      },
+      {
+        path: "/o-nama",
+        element: <O_Nama />,
+      },
+    ],
+  },
+]);
 
 function App() {
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <RouterProvider router={router} />
-    </>
+    </ThemeProvider>
   )
 }
 
