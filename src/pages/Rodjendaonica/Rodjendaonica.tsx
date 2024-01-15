@@ -1,11 +1,12 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
 import "./Styles/Rodjendaonica.scss";
+import rImage from "../../assets/cuvaonica.png"
 
 const Rodjendaonica = () => {
   return (
-    <Container maxWidth="xl" sx={{ mt: 40 }}>
+    <Container maxWidth="xl" sx={{ mt: 30 }}>
       <Grid container alignItems="center" spacing={10}>
-        <Grid item md={6}>
+        <Grid item md={6} sm={12}>
           <Typography
             variant="h1"
             sx={{ typography: { xs: { fontSize: 60 }, md: { fontSize: 100 } } }}
@@ -24,8 +25,8 @@ const Rodjendaonica = () => {
             omnis modi quae et.
           </Typography>
         </Grid>
-        <Grid item md={6}>
-          <Box component="img" maxWidth="100%" />
+        <Grid item md={6} sm={12}>
+          <Box component="img" src={rImage} maxWidth="100%" />
         </Grid>
       </Grid>
       <Typography
@@ -34,32 +35,17 @@ const Rodjendaonica = () => {
           mt: 10,
           typography: { xs: { fontSize: 60 }, md: { fontSize: 100 } },
         }}
+        textAlign="center"
       >
         Cenovnik
       </Typography>
       <Grid container>
         <Grid item sx={{ position: "relative" }}>
           <Box component="img" maxWidth="100%" />
-          <Typography
-            variant="body1"
-            sx={{
-              position: "absolute",
-              top: 0,
-              m: 6,
-            }}
-          >
+          <Typography variant="body1">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </Typography>
-          <Typography
-            variant="h5"
-            sx={{
-              position: "absolute",
-              right: "30px",
-              bottom: "50px",
-            }}
-          >
-            100 Eur
-          </Typography>
+          <Typography variant="h5">100 Eur</Typography>
         </Grid>
       </Grid>
     </Container>
