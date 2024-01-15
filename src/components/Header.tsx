@@ -10,7 +10,6 @@ import {
   List,
   Toolbar,
 } from "@mui/material";
-// import HamburgerIcon from "./HamburgerIcon";
 import Hamburger from "hamburger-react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useClickAway } from "react-use";
@@ -87,6 +86,7 @@ const Header = () => {
                     borderRadius: 22,
                     padding: 8,
                   }}
+                  ref={ref}
                   component={motion.div}
                   initial={{ opacity: 0, translateX: 500 }}
                   animate={{ opacity: 1, translateX: 150 }}
@@ -116,11 +116,11 @@ const Header = () => {
                       Rodjendaonica
                     </Link>
                     <Link
-                      to={"/cuvaonica"}
+                      to={"/igraonica"}
                       onClick={() => setOpen((prev) => !prev)}
                       className="header-link"
                     >
-                      Cuvaonica
+                      Igraonica
                     </Link>
                     <Link
                       to={"/kontakt"}
