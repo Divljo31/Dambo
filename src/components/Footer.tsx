@@ -32,7 +32,7 @@ const Footer = () => {
   };
 
   return (
-    <Box component="footer">
+    <Box component="footer" sx={{ marginTop: "100px" }}>
       <Container maxWidth="xl">
         <Grid
           container

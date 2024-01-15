@@ -58,7 +58,7 @@ const router = createBrowserRouter([
         element: <Rodjendaonica />,
       },
       {
-        path: "/cuvaonica",
+        path: "/igraonica",
         element: <Igraonica />,
       },
       {
