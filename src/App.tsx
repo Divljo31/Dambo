@@ -14,14 +14,17 @@ const theme = createTheme({
   typography: {
     fontFamily: "'Baloo 2', cursive",
     h1: {
-      fontWeight: "bold"
+      fontWeight: "bold",
+    },
+    h3: {
+      fontWeight: "bold",
     },
     h5: {
-      fontWeight: "bold"
+      fontWeight: "bold",
     },
     body1: {
-      fontWeight: "600"
-    }
+      fontWeight: "600",
+    },
   },
   components: {
     MuiCssBaseline: {
@@ -29,9 +32,9 @@ const theme = createTheme({
         @font-face {
           font-weight: "bold"
         }
-      `
-    }
-  }
+      `,
+    },
+  },
 });
 
 const Layout = () => {
