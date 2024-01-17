@@ -46,8 +46,8 @@ const Header = () => {
               <Link to={"/rodjendaonica"} className="header-link">
                 Rodjendaonica
               </Link>
-              <Link to={"/cuvaonica"} className="header-link">
-                Cuvaonica
+              <Link to={"/igraonica"} className="header-link">
+                Igraonica
               </Link>
               <Link to={"/kontakt"} className="header-link">
                 Kontakt

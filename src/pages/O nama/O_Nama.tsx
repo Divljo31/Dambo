@@ -2,12 +2,11 @@ import { Box, Container, Grid, Typography } from "@mui/material";
 
 const O_Nama = () => {
   return (
-    <Container maxWidth="lg" sx={{ mt: 30, mb: 25, marginX: "auto" }}>
+    <Container maxWidth="xl" sx={{ mt: 30, mb: 25 }}>
       <Grid container spacing={2} alignItems={"center"}>
         <Grid item sm={6} xs={12}>
-          <Typography variant="subtitle1">adsadsads</Typography>
-          <Typography variant="h2">adsadsads</Typography>
-          <Typography variant="body1" gutterBottom>
+          <Typography variant="h1">adsadsads</Typography>
+          <Typography variant="body1">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam,
             corrupti. Harum eaque architecto sequi necessitatibus culpa ex non
             tenetur maiores? Illo voluptatum autem aspernatur repudiandae
@@ -25,8 +24,9 @@ const O_Nama = () => {
         variant="h6"
         sx={{
           borderLeft: 2,
-          borderColor: "orange",
-          borderWidth: 3,
+          borderColor: "green",
+          borderWidth: 6,
+          borderRadius: 1,
           padding: 2,
           marginTop: 20,
         }}

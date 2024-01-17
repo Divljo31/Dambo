@@ -1,14 +1,15 @@
-import { Box, Container, Grid, Typography } from "@mui/material";
+import { Box, Card, CardContent, Container, Grid, Typography } from "@mui/material";
 import "./Styles/Igraonica.scss";
 import rImage from "../../assets/cuvaonica.png";
 
 const Igraonica = () => {
   return (
-    <Container maxWidth="xl" sx={{ mt: 40 }}>
+    <Container maxWidth="xl" sx={{ mt: 30 }}>
       <Grid container alignItems="center" spacing={10}>
         <Grid item md={6} sm={12}>
           <Typography
             variant="h1"
+            gutterBottom
             sx={{ typography: { xs: { fontSize: 60 }, md: { fontSize: 100 } } }}
           >
             Igraonica
@@ -35,32 +36,39 @@ const Igraonica = () => {
           mt: 10,
           typography: { xs: { fontSize: 60 }, md: { fontSize: 100 } },
         }}
+        textAlign="center"
       >
         Cenovnik
       </Typography>
       <Grid container>
-        <Grid item sx={{ position: "relative" }}>
-          <Box component="img" maxWidth="100%" />
-          <Typography
-            variant="body1"
+        <Grid item sx={{ margin: "0 auto" }}>
+          <Card
             sx={{
-              position: "absolute",
-              top: 0,
-              m: 6,
+              maxWidth: 666,
+              height: 222,
+              borderRadius: 10,
+              padding: 2,
+              backgroundColor: "#FFE7CC",
+              color: "#32355d",
+              position: "relative",
             }}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </Typography>
-          <Typography
-            variant="h5"
-            sx={{
-              position: "absolute",
-              right: "30px",
-              bottom: "50px",
-            }}
-          >
-            100 Eur
-          </Typography>
+            <CardContent>
+              <Typography gutterBottom variant="h3">
+                Rodjendaonica
+              </Typography>
+              <Typography variant="body1">
+                Lizards are a widespread group of squamate reptiles, with over
+                6,000 species, ranging across all continents except Antarctica
+              </Typography>
+              <Typography
+                variant="h5"
+                sx={{ position: "absolute", bottom: 22 }}
+              >
+                100 eur
+              </Typography>
+            </CardContent>
+          </Card>
         </Grid>
       </Grid>
     </Container>
