@@ -1,4 +1,5 @@
-import { Box, Container, Grid, Typography } from "@mui/material";
+import { Container, Grid, Typography } from "@mui/material";
+import testONama from "../../assets/testimg.png"
 
 const O_Nama = () => {
   return (
@@ -16,7 +17,7 @@ const O_Nama = () => {
           </Typography>
         </Grid>
         <Grid item sm={6} xs={12}>
-          <img src="src\assets\testimg.png" style={{ width: "100%" }} />
+          <img src={testONama} style={{ width: "100%" }} />
         </Grid>
       </Grid>
       <Typography
