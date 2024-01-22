@@ -21,10 +21,10 @@ const Header = () => {
   useClickAway(ref, () => setOpen(false));
 
   return (
-    <AppBar className="nav">
+    <AppBar className="nav" sx={{ height: 300 }}>
       <Toolbar
         className="cloud-navbar"
-        sx={{ backgroundPositionY: { xs: "-75px" } }}
+        sx={{ backgroundPositionY: { xs: "-100px", md: "-75px" } }}
       >
         <Container
           maxWidth="xl"
@@ -43,6 +43,9 @@ const Header = () => {
               <Link to={"/"} className="header-link">
                 Pocetna
               </Link>
+              <Link to={"/o-nama"} className="header-link">
+                O nama
+              </Link>
               <Link to={"/rodjendaonica"} className="header-link">
                 Rodjendaonica
               </Link>
@@ -51,9 +54,6 @@ const Header = () => {
               </Link>
               <Link to={"/kontakt"} className="header-link">
                 Kontakt
-              </Link>
-              <Link to={"/o-nama"} className="header-link">
-                O nama
               </Link>
             </List>
           </Box>
@@ -79,20 +79,28 @@ const Header = () => {
                 <Box
                   sx={{
                     position: "absolute",
-                    left: 0,
-                    top: "250px",
-                    width: "100%",
+                    right: 0,
+                    top: "80px",
+                    width: "35%",
                     bgcolor: "#D7F5FA",
                     borderRadius: 22,
                     padding: 8,
                   }}
                   ref={ref}
                   component={motion.div}
-                  initial={{ opacity: 0, translateX: 500 }}
-                  animate={{ opacity: 1, translateX: 150 }}
-                  exit={{ opacity: 0, translateX: 500 }}
-                  transition={{ duration: 0.3 }}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.2 }}
                 >
+                  <IconButton edge="end" color="inherit" sx={{ width: "100%", position: "absolute", top: 0, right: "-65px" }}>
+                    <Hamburger
+                      toggled={isOpen}
+                      toggle={setOpen}
+                      color="#32355d"
+                      rounded
+                    />
+                  </IconButton>
                   <List
                     sx={{
                       display: "flex",
@@ -107,6 +115,13 @@ const Header = () => {
                       className="header-link"
                     >
                       Pocetna
+                    </Link>
+                    <Link
+                      to={"/o-nama"}
+                      onClick={() => setOpen((prev) => !prev)}
+                      className="header-link"
+                    >
+                      O nama
                     </Link>
                     <Link
                       to={"/rodjendaonica"}
@@ -128,13 +143,6 @@ const Header = () => {
                       className="header-link"
                     >
                       Kontakt
-                    </Link>
-                    <Link
-                      to={"/o-nama"}
-                      onClick={() => setOpen((prev) => !prev)}
-                      className="header-link"
-                    >
-                      O nama
                     </Link>
                   </List>
                 </Box>
