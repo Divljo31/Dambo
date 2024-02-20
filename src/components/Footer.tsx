@@ -1,4 +1,4 @@
-import { Box, Container, Grid, TextField, TextareaAutosize, Typography } from "@mui/material";
+import { Box, Container, Grid, TextField, TextareaAutosize} from "@mui/material";
 import React, { useRef } from "react";
 import dumbo from "../assets/dumbo.png";
 import igLogo from "../assets/instagram.png";
@@ -48,7 +48,7 @@ const Footer = () => {
               <img src={dumbo} className="footer-logo" />
               <p>Dambo</p>
               <p>&copy; Bar & Play</p>
-              <p>Telefon: +381 65 444 444</p>
+              <p>Telefon: +381 65 9021 992</p>
             </div>
             <div className="social-icons">
               <a href="#" className="icon">

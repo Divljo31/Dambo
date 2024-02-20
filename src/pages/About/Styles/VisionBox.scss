@@ -1,0 +1,34 @@
+.vision-box {
+    display: flex;
+    align-items: center;
+    margin: 10px q0; /* Adjust spacing between boxes */
+
+  }
+  
+  .vision-title {
+    flex-shrink: 0;
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin-right: 20px; /* Space between the title box and the content */
+    font-weight: bold;
+  }
+  
+  .vision-content {
+    flex-grow: 1;
+  }
+  
+  /* Color classes */
+  .orange {
+    background-color: #FDECD5;
+  }
+  
+  .blue {
+    background-color: #D3E4CD;
+  }
+  
+  .green {
+    background-color: #ECE5F0;
+  }
+  
+  /* Add additional styles for font sizes, colors, or box shadows as needed */
+  

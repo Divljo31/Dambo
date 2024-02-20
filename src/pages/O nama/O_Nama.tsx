@@ -6,14 +6,10 @@ const O_Nama = () => {
     <Container maxWidth="xl" sx={{ mt: 30, mb: 25 }}>
       <Grid container spacing={2} alignItems={"center"}>
         <Grid item sm={6} xs={12}>
-          <Typography variant="h1">adsadsads</Typography>
+          <Typography variant="h1">O nama</Typography>
           <Typography variant="body1">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam,
-            corrupti. Harum eaque architecto sequi necessitatibus culpa ex non
-            tenetur maiores? Illo voluptatum autem aspernatur repudiandae
-            reiciendis laudantium. Vitae nobis sequi mollitia cupiditate dolor
-            vero, quae tempora eius fugit, ad repellat assumenda obcaecati
-            cumque, modi illo minus! Id eos facilis corrupti.
+          Dambo bar and play je moderna igraonica, čuvaonica i rodjendaonica u malom gradiću Krupanj, 
+          a koncept je osmišljen tako da podstiče razvoj, kreativnost i socijalizaciju dece uzrasta do deset godina.
           </Typography>
         </Grid>
         <Grid item sm={6} xs={12}>
