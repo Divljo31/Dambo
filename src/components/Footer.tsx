@@ -1,4 +1,10 @@
-import { Box, Container, Grid, TextField, TextareaAutosize} from "@mui/material";
+import {
+  Box,
+  Container,
+  Grid,
+  TextField,
+  TextareaAutosize,
+} from "@mui/material";
 import React, { useRef } from "react";
 import dumbo from "../assets/dumbo.png";
 import igLogo from "../assets/instagram.png";
@@ -84,7 +90,7 @@ const Footer = () => {
                 alignItems: "end",
                 flexDirection: "column",
                 gap: 2,
-                width: "330px",  
+                width: "330px",
               }}
             >
               <TextField
@@ -109,6 +115,7 @@ const Footer = () => {
                 className="input-form"
                 placeholder="Napisite poruku..."
                 maxRows={5}
+                name="message"
                 style={{ height: 100, width: "98%" }}
               />
               <Button type="submit" variant="contained">
