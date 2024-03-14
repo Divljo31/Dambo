@@ -9,6 +9,7 @@ import {
   IconButton,
   List,
   Toolbar,
+  Typography,
 } from "@mui/material";
 import Hamburger from "hamburger-react";
 import { AnimatePresence, motion } from "framer-motion";
@@ -93,7 +94,15 @@ const Header = () => {
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.2 }}
                 >
-                  <IconButton edge="end" color="inherit" sx={{ width: "100%", position: "absolute", top: 0, right: "-65px" }}>
+                  <IconButton
+                    edge="end"
+                    color="inherit"
+                    sx={{
+                      position: "absolute",
+                      top: 0,
+                      right: "52px",
+                    }}
+                  >
                     <Hamburger
                       toggled={isOpen}
                       toggle={setOpen}
@@ -109,41 +118,53 @@ const Header = () => {
                       // paddingLeft: 10
                     }}
                   >
-                    <Link
-                      to={"/"}
-                      onClick={() => setOpen((prev) => !prev)}
-                      className="header-link"
-                    >
-                      Pocetna
-                    </Link>
-                    <Link
-                      to={"/o-nama"}
-                      onClick={() => setOpen((prev) => !prev)}
-                      className="header-link"
-                    >
-                      O nama
-                    </Link>
-                    <Link
-                      to={"/rodjendaonica"}
-                      onClick={() => setOpen((prev) => !prev)}
-                      className="header-link"
-                    >
-                      Rodjendaonica
-                    </Link>
-                    <Link
-                      to={"/igraonica"}
-                      onClick={() => setOpen((prev) => !prev)}
-                      className="header-link"
-                    >
-                      Igraonica
-                    </Link>
-                    <Link
-                      to={"/kontakt"}
-                      onClick={() => setOpen((prev) => !prev)}
-                      className="header-link"
-                    >
-                      Kontakt
-                    </Link>
+                    <Typography variant="h5">
+                      <Link
+                        to={"/"}
+                        onClick={() => setOpen((prev) => !prev)}
+                        className="header-link"
+                      >
+                        Pocetna
+                      </Link>
+                    </Typography>
+                    <Typography variant="h5">
+                      <Link
+                        to={"/o-nama"}
+                        onClick={() => setOpen((prev) => !prev)}
+                        className="header-link"
+                      >
+                        O nama
+                      </Link>
+                    </Typography>
+                    <Typography variant="h5">
+                      <Link
+                        to={"/rodjendaonica"}
+                        onClick={() => setOpen((prev) => !prev)}
+                        className="header-link"
+                      >
+                        Rodjendaonica
+                      </Link>
+                    </Typography>
+
+                    <Typography variant="h5">
+                      <Link
+                        to={"/igraonica"}
+                        onClick={() => setOpen((prev) => !prev)}
+                        className="header-link"
+                      >
+                        Igraonica
+                      </Link>
+                    </Typography>
+
+                    <Typography variant="h5">
+                      <Link
+                        to={"/kontakt"}
+                        onClick={() => setOpen((prev) => !prev)}
+                        className="header-link"
+                      >
+                        Kontakt
+                      </Link>
+                    </Typography>
                   </List>
                 </Box>
               )}
