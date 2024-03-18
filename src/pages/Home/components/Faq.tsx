@@ -11,16 +11,16 @@ const Faq = () => {
       answer: 'U nasoj ulici dostupan je javni parking, a parking mesto se lako pronalazi, posebno u poslepodnevnim casovima.',
     },
     {
-      question: 'How do I get started?',
-      answer: 'To get started, follow the steps provided in this FAQ component.',
+      question: 'Koje je radno vreme igraonice?',
+      answer: 'Radnim danima od 12h do 20h časova, vikendom od 10h do 21h.',
     },
     {
-      question: 'Da li igraonica ima obezbedjen parking?',
-      answer: 'U nasoj ulici dostupan je javni parking, a parking mesto se lako pronalazi, posebno u poslepodnevnim casovima.',
+      question: 'Da li organizujete i proslave rođendana?',
+      answer: 'Da, organizujemo proslave rođendana uz prisustvo profesionalnih lica koji su zaduženi za bezbednost i zabavu dece. Svi rođendani su zatvorenog tipa sto znači da vam je naše osoblje tokom trajanja termina u potpunosti posvećeno',
     },
     {
-      question: 'How do I get started?',
-      answer: 'To get started, follow the steps provided in this FAQ component.',
+      question: 'Da li postoje usluge čuvanja dece bez prisustva roditelja?',
+      answer: 'Da, roditeljima je na raspolaganju i usluga čuvanja dece na sat, sa ili bez njihovog prisustva.',
     },
   ];
 
