@@ -22,15 +22,10 @@ const Rodjendaonica = () => {
             Rodjendaonica
           </Typography>
           <Typography variant="body1">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod porro
-            molestias quibusdam unde, reiciendis repellat libero omnis modi quae
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod porro
-            molestias quibusdam unde, reiciendis repellat libero omnis modi quae
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod porro
-            molestias quibusdam unde, reiciendis repellat libero omnis modi quae
-            et. et. et. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Quod porro molestias quibusdam unde, reiciendis repellat libero
-            omnis modi quae et.
+          Dečiji rođendani u našoj igraonici prilagođavaju se željama i potrebama dece i roditelja. Uvek kreiramo proslavu koja će biti po mnogo čemu posebna, 
+          a naše osoblje garantuje da će svaki naš gost biti obasut pažnjom i uslužen kao član porodice. Organizujemo sadržajne tematske animacije dece i naš zadatak 
+          nije samo da ih zabavimo već se uvek trudimo da ih kroz animaciju nečemu lepom naučimo. Naš tim poseduje višegodišnje iskustvo u kompletnoj organizaciji različitih događaja uz tematsku dekoraciju. Zato smo uvereni da ćemo ispuniti, 
+          kako želje vaših mališana, tako i vaše!
           </Typography>
         </Grid>
         <Grid item md={6} sm={12}>

@@ -9,7 +9,11 @@ const O_Nama = () => {
           <Typography variant="h1">O nama</Typography>
           <Typography variant="body1">
           Dambo bar and play je moderna igraonica, čuvaonica i rodjendaonica u malom gradiću Krupanj, 
-          a koncept je osmišljen tako da podstiče razvoj, kreativnost i socijalizaciju dece uzrasta do deset godina.
+          a koncept je osmišljen tako da podstiče razvoj, kreativnost i socijalizaciju dece uzrasta do deset godina. 
+          I dok mališani uživaju u programu, roditeljima nudimo izuzetan ketering i izbor najkvalitetnijih pića. 
+          Smestite se udobno u prostoru Dambo bar-a, u bašti, za šankom ili stolovima opremljenim za rad na laptopu, 
+          i vreme će za vas proteći jednako brzo i kvalitetno kao za vaše dete. Roditeljima je na raspolaganju i usluga čuvanja dece na sat, sa ili bez njihovog prisustva.
+          U ponudi imamo povoljne mesečne pakete za čuvaonicu koji donose značajne popuste
           </Typography>
         </Grid>
         <Grid item sm={6} xs={12}>
@@ -28,11 +32,8 @@ const O_Nama = () => {
           marginTop: 20,
         }}
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-        sapiente voluptatibus velit sequi eius neque natus fugit officiis
-        repudiandae tenetur odit architecto adipisci provident vero consequatur
-        ipsa vel nisi dolor possimus ab, illum quae? A cupiditate sapiente
-        deleniti maiores laboriosam.
+        Dambo je naš mali san pretočen u stvarnost. Pored igraonice za decu, sjajnih igara I prostora inspirisanog prirodom, obezbedili smo I kutak za odrasle gde se možete opustiti uz sjajnu kafu, ili završiti I poslovne obaveze dok se deca zabavljaju pod nadzorom stručnog tima. 
+
       </Typography>
     </Container>
   );

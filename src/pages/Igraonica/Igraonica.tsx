@@ -15,15 +15,10 @@ const Igraonica = () => {
             Igraonica
           </Typography>
           <Typography variant="body1">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod porro
-            molestias quibusdam unde, reiciendis repellat libero omnis modi quae
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod porro
-            molestias quibusdam unde, reiciendis repellat libero omnis modi quae
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod porro
-            molestias quibusdam unde, reiciendis repellat libero omnis modi quae
-            et. et. et. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Quod porro molestias quibusdam unde, reiciendis repellat libero
-            omnis modi quae et.
+          Kada jednom dožive zabavu u Dambo igraonici, vaši mališani tražiće da ih dovodite iznova i iznova! 
+          Bilo da dolazite sami ili sa drugarima, Dambo garantuje nezaboravnu zabavu i druženje, jer naš zadatak je da svakom detetu poseta 
+          bude prava mala avanutra. Dambo je igraonica za decu koja vole da se upoznaju sa novim drugarima, da probaju raznovrsne igre i da nauče nešto novo kroz igru, 
+          kao i za roditelje koji žele da budu bezbrižni, znajući da je njihovo dete u rukama iskusnih animatora.
           </Typography>
         </Grid>
         <Grid item md={6} sm={12}>
