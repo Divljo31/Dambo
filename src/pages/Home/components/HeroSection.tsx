@@ -31,42 +31,6 @@ const LandingPage = () => {
           src={oblaci}
           maxWidth={{ md: 900, sm: 700, xs: 370 }}
         />
-        <Typography
-          component={motion.h1}
-          viewport={{ once: true }}
-          initial={{ scale: 0, opacity: 0 }}
-          whileInView={{ scale: 1, opacity: 1 }}
-          transition={{ ease: "easeIn", duration: 0.3 }}
-          position={"absolute"}
-          left={{ md: 100, sm: 150, xs: 200 }}
-          right={0}
-          top={450}
-          marginLeft={"auto"}
-          marginRight={"auto"}
-          maxWidth={800}
-          fontSize={{ md: 70, sm: 50, xs: 30 }}
-          fontWeight={700}
-        >
-          DEČIJA IGRAONICA
-        </Typography>
-        <Typography
-          component={motion.h1}
-          viewport={{ once: true }}
-          initial={{ scale: 0, opacity: 0 }}
-          whileInView={{ scale: 1, opacity: 1 }}
-          transition={{ ease: "easeIn", duration: 0.3 }}
-          position={"absolute"}
-          left={{ md: 100, sm: 180, xs: 200 }}
-          right={0}
-          bottom={200}
-          marginLeft={"auto"}
-          marginRight={"auto"}
-          maxWidth={800}
-          fontSize={{ md: 70, sm: 45, xs: 30 }}
-          fontWeight={700}
-        >
-          DAMBO BAR AND PLAY
-        </Typography>
       </Box>
     </Box>
   );
